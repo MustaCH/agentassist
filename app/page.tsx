@@ -227,7 +227,7 @@ export default function AgentAssistLanding() {
           <h2 className="text-3xl font-bold mb-12">Testimonials</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-neutral-100 text-black border-b-2 border-blue-500">
+            <Card className="bg-slate-800 text-white border-2 border-blue-500">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-16 h-16 bg-white rounded-full border-2 border-red-700 overflow-hidden">
@@ -250,7 +250,7 @@ export default function AgentAssistLanding() {
               </CardContent>
             </Card>
 
-            <Card className="bg-neutral-100 text-black border-b-2 border-blue-500">
+            <Card className="bg-slate-800 text-white border-2 border-blue-500">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-16 h-16 bg-white rounded-full border-2 border-red-700 overflow-hidden">
@@ -271,7 +271,7 @@ export default function AgentAssistLanding() {
               </CardContent>
             </Card>
 
-            <Card className="bg-neutral-100 text-black border-b-2 border-blue-500">
+            <Card className="bg-slate-800 text-white border-2 border-blue-500">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-16 h-16 bg-white rounded-full border-2 border-red-700 overflow-hidden">
