@@ -18,11 +18,20 @@ export default function AgentAssistLanding() {
 
   const handleContactOpen = () => {
     setContactOpen(true);
+    // Agrega el parámetro ?contact=open a la URL sin recargar
+    const url = new URL(window.location.href);
+    url.searchParams.set('contact', 'open');
+    router.replace(url.pathname + url.search + url.hash);
   };
 
   const handleContactClose = () => {
     setContactOpen(false);
+    // Quita el parámetro ?contact de la URL
+    const url = new URL(window.location.href);
+    url.searchParams.delete('contact');
+    router.replace(url.pathname + url.search + url.hash);
   };
+
 
   const handleCalendlyOpen = () => {
     setCalendlyOpen(true);
