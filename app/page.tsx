@@ -61,6 +61,7 @@ export default function AgentAssistLanding() {
           </button>
         <Button onClick={handleCalendlyOpen} className="bg-blue-500 hover:bg-blue-600 text-white">Book a demo</Button>
         </div>
+        <Button onClick={handleCalendlyOpen} className="md:hidden bg-blue-500 hover:bg-blue-600 text-white">Book a demo</Button>
       </nav>
 
       {/* Hero Section */}
