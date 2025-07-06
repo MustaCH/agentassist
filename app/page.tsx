@@ -7,11 +7,14 @@ import Image from "next/image"
 
 import { useState } from "react";
 import ContactForm from "../components/ContactForm";
-import CalendlyModal from "../components/CalendlyModal";
+import CalendlyInline from "../components/CalendlyInline";
+import { useRouter } from "next/navigation";
 
 export default function AgentAssistLanding() {
   const [contactOpen, setContactOpen] = useState(false);
   const [calendlyOpen, setCalendlyOpen] = useState(false);
+
+  const router = useRouter();
 
   const handleContactOpen = () => {
     setContactOpen(true);
@@ -23,16 +26,12 @@ export default function AgentAssistLanding() {
 
   const handleCalendlyOpen = () => {
     setCalendlyOpen(true);
-  };
-
-  const handleCalendlyClose = () => {
-    setCalendlyOpen(false);
+    router.push('/#cta');
   };
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       {contactOpen && <ContactForm onClose={handleContactClose} />}
-      {calendlyOpen && <CalendlyModal onClose={handleCalendlyClose} />} 
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-4 border-b border-white">
         <div className="flex items-center space-x-2">
@@ -48,10 +47,10 @@ export default function AgentAssistLanding() {
           <a href="#testimonials" className="text-white hover:text-slate-300 transition-colors">
             Testimonials
           </a>
-          <a href="#cta" className="text-white hover:text-slate-300 transition-colors">
+          <button onClick={handleContactOpen} className="text-white hover:text-slate-300 transition-colors">
             Contact Us
-          </a>
-        <Button className="bg-slate-700 hover:bg-blue-500 text-white">Book a demo</Button>
+          </button>
+        <Button onClick={handleCalendlyOpen} className="bg-slate-700 hover:bg-blue-500 text-white">Book a demo</Button>
         </div>
       </nav>
 
@@ -121,7 +120,7 @@ export default function AgentAssistLanding() {
       <section id="features" className="px-6 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-4">How it works :</h2>
+            <h2 className="text-3xl font-bold mb-4">How it works:</h2>
             <p className="text-slate-300 text-lg max-w-3xl">
               Explore the powerful features that make AgentAssist the ultimate AI automation tool for real estate professionals.
             </p>
@@ -268,9 +267,16 @@ export default function AgentAssistLanding() {
             Start your free trial today and experience the power of AI automation.
           </p>
           <div className="flex flex-col items-center space-y-1">
-            <Button size="lg" className="w-fit bg-slate-700 hover:bg-slate-600 text-white px-8 py-3" onClick={handleCalendlyOpen}>
-              Book a demo
-            </Button>
+            {!calendlyOpen && 
+              <Button size="lg" className="w-fit bg-slate-700 hover:bg-blue-500 text-white px-8 py-3" onClick={handleCalendlyOpen}>
+                Book a demo
+              </Button>
+            }
+            {calendlyOpen && (
+              <div className="w-full flex justify-center mt-4">
+                <CalendlyInline />
+              </div>
+            )} 
             <button onClick={handleContactOpen} className="w-fit text-sm text-white hover:text-slate-300 px-8 py-3 underline underline-offset-2">
               or if you have any questions, contact us
             </button>

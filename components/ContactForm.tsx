@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 
 interface ContactFormProps {
   onClose: () => void;
@@ -6,9 +8,27 @@ interface ContactFormProps {
 
 const ANIMATION_DURATION = 200; // ms
 
+const countryOptions = [
+  { code: 'US', name: 'United States', dialCode: '+1', flag: '🇺🇸' },
+  { code: 'ES', name: 'Spain', dialCode: '+34', flag: '🇪🇸' },
+  { code: 'BR', name: 'Brazil', dialCode: '+55', flag: '🇧🇷' },
+];
+
 const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
   const [show, setShow] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const [selectedCountry, setSelectedCountry] = useState('AR');
+  const [phone, setPhone] = useState('');
+
+  const handleCountryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedCountry(e.target.value);
+    setPhone(''); // Limpiar el número cuando cambia el país
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPhone(e.target.value.replace(/[^0-9 ]/g, ''));
+  };
 
   // Cierra con animación
   const handleClose = () => {
@@ -50,7 +70,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
           name="name"
           placeholder="Enter your name"
           required
-          className="w-full px-4 py-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 rounded bg-white text-black border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div>
@@ -61,18 +81,19 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
           name="email"
           placeholder="Enter your email"
           required
-          className="w-full px-4 py-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 rounded bg-white text-black border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div>
         <label htmlFor="phone" className="block text-sm font-medium text-white mb-1">Phone</label>
-        <input
-          type="tel"
-          id="phone"
+        <PhoneInput
+          defaultCountry="ca"
+          value={phone}
+          onChange={setPhone}
+          inputClassName="w-full px-4 py-2  rounded bg-white text-black border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          style={{ width: '100%'  }}
           name="phone"
-          placeholder="Enter your phone number"
           required
-          className="w-full px-4 py-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <div>
@@ -83,7 +104,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
           placeholder="Enter your message"
           rows={4}
           required
-          className="w-full px-4 py-2 rounded bg-slate-700 text-white border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 rounded bg-white text-black border border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         ></textarea>
       </div>
       <button
