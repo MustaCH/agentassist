@@ -196,7 +196,7 @@ export default function AgentAssistLanding() {
             <h2 className="text-4xl font-bold mb-6">And more...</h2>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
               <span className="inline-block bg-blue-700  text-white text-sm px-4 py-2 rounded-full font-semibold shadow">🧠 Remember client prospects</span>
-              <span className="inline-block bg-blue-700  text-white text-sm px-4 py-2 rounded-full font-semibold shadow">✉️ Redact personalized messages and emails</span>
+              <span className="inline-block bg-blue-700  text-white text-sm px-4 py-2 rounded-full font-semibold shadow">✉️ Redact personalized messages and emails to your clients</span>
               <span className="inline-block bg-blue-700  text-white text-sm px-4 py-2 rounded-full font-semibold shadow">👤 Client profile based search</span>
               <span className="inline-block bg-blue-700  text-white text-sm px-4 py-2 rounded-full font-semibold shadow">🖼️ Extract data from images</span>
               <span className="inline-block bg-blue-700  text-white text-sm px-4 py-2 rounded-full font-semibold shadow">📄 Analize legal documents</span>
