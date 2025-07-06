@@ -287,16 +287,8 @@ export default function AgentAssistLanding() {
       {/* Footer */}
       <footer className="px-6 py-8 border-t border-slate-800">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex space-x-8">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                Terms of Service
-              </a>
-            </div>
-            <p className="text-slate-400 text-sm">© 2023 AgentAssist. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+            <p className="text-slate-400 text-sm">© 2025 AgentAssist. All rights reserved.</p>
           </div>
         </div>
       </footer>
