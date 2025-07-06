@@ -206,8 +206,8 @@ export default function AgentAssistLanding() {
                     <p className="text-sm">RE/MAX DOCTA</p>
                   </div>
                 </div>
-                <p className="text-sm">
-                  "AgentAssist has revolutionized my business. I'm closing deals faster than ever!"
+                <p className="text-sm italic">
+                  "AgentAssist has been a real game changer for me. I'm able to focus more on my clients, and deals seem to move along so much quicker. Honestly, I don't know how I managed without it before."
                 </p>
               </CardContent>
             </Card>
@@ -229,7 +229,7 @@ export default function AgentAssistLanding() {
                     <p className="text-sm">RE/MAX TIME</p>
                   </div>
                 </div>
-                <p className="text-sm">"The AI-powered automation saves me hours every week. Highly recommended!"</p>
+                <p className="text-sm italic">"What I love most is how much time it saves me. The automation takes care of so many little tasks that used to eat up my day. It's freed me up to actually connect with people and grow my business."</p>
               </CardContent>
             </Card>
 
@@ -250,8 +250,8 @@ export default function AgentAssistLanding() {
                     <p className="text-sm">RE/MAX DOCTA</p>
                   </div>
                 </div>
-                <p className="text-sm">
-                  "I love the performance analytics. It helps me identify areas for improvement."
+                <p className="text-sm italic">
+                  "The analytics give me a clear picture of what's working and what's not. It's helped me make smarter decisions and improve in ways I hadn't even considered before."    
                 </p>
               </CardContent>
             </Card>
