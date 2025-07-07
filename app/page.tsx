@@ -70,7 +70,7 @@ export default function AgentAssistLanding() {
           <div className="relative bg-neutral-900 h-[60vh] md:h-[80vh] rounded-2xl flex flex-col justify-center overflow-hidden">
             <div className="absolute inset-0">
               <Image
-                src="hero-image.png"
+                src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893901/hero-image_zgstxb.png"
                 alt="City view through windows"
                 fill
                 className="object-cover object-top opacity-60"
@@ -139,7 +139,7 @@ export default function AgentAssistLanding() {
             <div className="space-y-4">
               <div className="aspect-video bg-slate-800 rounded-lg overflow-hidden">
                 <Image
-                  src="/features/send_a_message.png"
+                  src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893910/send_a_message_smdp4k.png"
                   alt="Automated Lead Nurturing"
                   width={300}
                   height={200}
@@ -158,7 +158,7 @@ export default function AgentAssistLanding() {
               <div className="aspect-video bg-teal-600 rounded-lg flex items-center justify-center">
                 <div className="aspect-video bg-slate-800 rounded-lg overflow-hidden">
                 <Image
-                  src="/features/list_of_properties.png"
+                  src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893908/list_of_properties_tq6bjm.png"
                   alt="Automated Lead Nurturing"
                   width={300}
                   height={200}
@@ -175,7 +175,7 @@ export default function AgentAssistLanding() {
             <div className="space-y-4">
               <div className="aspect-video bg-slate-800 rounded-lg overflow-hidden">
                 <Image
-                  src="/features/send_it_to_your_client.png"
+                  src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893915/send_it_to_your_client_bm9xgm.png"
                   alt="Performance Analytics"
                   width={300}
                   height={200}
