@@ -326,7 +326,8 @@ export default function AgentAssistLanding() {
       {/* Footer */}
       <footer className="px-6 py-8 border-t border-slate-800">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-evenly items-center space-y-4 md:space-y-0">
+            <a href="mailto:team@agentassist.info" className="text-slate-400 text-sm underline underline-offset-2">team@agentassist.info</a>
             <p className="text-slate-400 text-sm">© 2025 AgentAssist. All rights reserved.</p>
           </div>
         </div>
