@@ -45,7 +45,7 @@ export default function AgentAssistLanding() {
   };
 
   return (
-    <div className="min-h-screen bg-blue-100 text-white">
+    <div className="min-h-screen bg-blue-100 text-white overflow-x-hidden">
       {contactOpen && <ContactForm onClose={handleContactClose} />}
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-4 bg-white border-b border-white">
@@ -84,7 +84,7 @@ export default function AgentAssistLanding() {
                 className="object-cover object-top opacity-60"
               />
             </div> */}
-            <div className="relative z-10 flex flex-col md:items-center gap-4 text-4xl md:text-5xl font-bold p-4">
+            <div className="relative z-10 flex flex-col md:items-center gap-4 text-3xl md:text-5xl font-bold p-4">
               <h1 data-aos="fade-up" data-aos-duration="1000" className="bg-gradient-to-r from-blue-800 to-blue-500 bg-clip-text text-transparent">
                 Never search for properties manually,
               </h1>
@@ -145,9 +145,9 @@ export default function AgentAssistLanding() {
               Explore the powerful features that make AgentAssist the ultimate AI automation tool for real estate professionals.
             </p>
           </div>
-          <div data-aos="fade-right" className="flex flex-col gap-6">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" className="flex flex-col gap-6">
             <div className="flex flex-col md:flex-row items-center gap-4 bg-white drop-shadow-lg rounded-lg">
-              <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-bl-lg overflow-hidden">
+              <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-tr-lg md:rounded-tl-lg md:rounded-bl-lg overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893910/send_a_message_smdp4k.png"
                   alt="Automated Lead Nurturing"
@@ -164,8 +164,8 @@ export default function AgentAssistLanding() {
               </div>
             </div>
 
-            <div data-aos="fade-left" className="flex flex-col md:flex-row-reverse items-center gap-4 bg-white drop-shadow-lg rounded-lg">
-              <div className="aspect-video bg-blue-600 rounded-tr-lg rounded-br-lg overflow-hidden">
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" className="flex flex-col md:flex-row-reverse items-center gap-4 bg-white drop-shadow-lg rounded-lg">
+              <div className="aspect-video bg-blue-600 rounded-tr-lg rounded-tl-lg md:rounded-tr-lg md:rounded-br-lg overflow-hidden">
                 <div className="aspect-video bg-slate-800 rounded-tr-lg rounded-br-lg overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893908/list_of_properties_tq6bjm.png"
@@ -182,8 +182,8 @@ export default function AgentAssistLanding() {
               </div>
             </div>
 
-            <div data-aos="fade-right" className="flex flex-col md:flex-row items-center gap-4 bg-white drop-shadow-lg rounded-lg">
-              <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-bl-lg overflow-hidden">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" className="flex flex-col md:flex-row items-center gap-4 bg-white drop-shadow-lg rounded-lg">
+              <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-bl-lg md:rounded-tl-lg md:rounded-bl-lg overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893915/send_it_to_your_client_bm9xgm.png"
                   alt="Performance Analytics"
