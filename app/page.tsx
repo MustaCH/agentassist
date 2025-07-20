@@ -84,12 +84,12 @@ export default function AgentAssistLanding() {
                 className="object-cover object-top opacity-60"
               />
             </div> */}
-            <div className="relative z-10 flex flex-col items-center gap-4 text-3xl md:text-5xl font-bold p-4">
+            <div className="relative z-10 flex flex-col md:items-center gap-4 text-4xl md:text-5xl font-bold p-4">
               <h1 data-aos="fade-up" data-aos-duration="1000" className="bg-gradient-to-r from-blue-800 to-blue-500 bg-clip-text text-transparent">
                 Never search for properties manually,
               </h1>
               <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" className="bg-gradient-to-l from-blue-800 to-blue-500 w-fit text-white px-1 rounded">There is an AI for that.</p>
-              <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" className="text-black/70 text-center font-thin text-lg max-w-2xl">Every real state agent should be focusing in what they do best: <span className="font-bold text-blue-500">closing deals.</span> Why waste time searching for properties manually? There's no need to. <br /> Agent Assist is here to do that for you.</p>           
+              <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000" className="text-black/70 md:text-center font-thin text-sm md:text-lg max-w-2xl">Every real state agent should be focusing in what they do best: <span className="font-bold text-blue-500">closing deals.</span> Why waste time searching for properties manually? There's no need to. <br /> Agent Assist is here to do that for you.</p>           
               <Button data-aos="zoom-in" onClick={handleCalendlyOpen} className="bg-blue-500 hover:bg-blue-600 text-white mt-6">Book a demo</Button>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function AgentAssistLanding() {
             </p>
           </div>
           <div data-aos="fade-right" className="flex flex-col gap-6">
-            <div className="flex items-center gap-4 bg-white drop-shadow-lg rounded-lg">
+            <div className="flex flex-col md:flex-row items-center gap-4 bg-white drop-shadow-lg rounded-lg">
               <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-bl-lg overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893910/send_a_message_smdp4k.png"
@@ -164,7 +164,7 @@ export default function AgentAssistLanding() {
               </div>
             </div>
 
-            <div data-aos="fade-left" className="flex flex-row-reverse items-center gap-4 bg-white drop-shadow-lg rounded-lg">
+            <div data-aos="fade-left" className="flex flex-col md:flex-row-reverse items-center gap-4 bg-white drop-shadow-lg rounded-lg">
               <div className="aspect-video bg-blue-600 rounded-tr-lg rounded-br-lg overflow-hidden">
                 <div className="aspect-video bg-slate-800 rounded-tr-lg rounded-br-lg overflow-hidden">
                 <Image
@@ -182,7 +182,7 @@ export default function AgentAssistLanding() {
               </div>
             </div>
 
-            <div data-aos="fade-right" className="flex items-center gap-4 bg-white drop-shadow-lg rounded-lg">
+            <div data-aos="fade-right" className="flex flex-col md:flex-row items-center gap-4 bg-white drop-shadow-lg rounded-lg">
               <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-bl-lg overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893915/send_it_to_your_client_bm9xgm.png"
@@ -235,7 +235,7 @@ export default function AgentAssistLanding() {
           <h2 className="text-3xl text-black/70 font-bold mb-12">Testimonials</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-white text-black/70 border-2 drop-shadow-lg">
+            <Card data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" className="bg-white text-black/70 border-2 drop-shadow-lg">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-16 h-16 bg-white rounded-full border-2 border-red-700 overflow-hidden">
@@ -258,7 +258,7 @@ export default function AgentAssistLanding() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white text-black/70 border-2 drop-shadow-lg">
+            <Card data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="bg-white text-black/70 border-2 drop-shadow-lg">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-16 h-16 bg-white rounded-full border-2 border-red-700 overflow-hidden">
@@ -279,7 +279,7 @@ export default function AgentAssistLanding() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white text-black/70 border-2 drop-shadow-lg">
+            <Card data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" className="bg-white text-black/70 border-2 drop-shadow-lg">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="w-16 h-16 bg-white rounded-full border-2 border-red-700 overflow-hidden">
