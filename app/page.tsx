@@ -183,7 +183,7 @@ export default function AgentAssistLanding() {
             </div>
 
             <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" className="flex flex-col md:flex-row items-center gap-4 bg-white drop-shadow-lg rounded-lg">
-              <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-bl-lg md:rounded-tl-lg md:rounded-bl-lg overflow-hidden">
+              <div className="aspect-video bg-slate-800 rounded-tl-lg rounded-tr-lg md:rounded-tl-lg md:rounded-bl-lg overflow-hidden">
                 <Image
                   src="https://res.cloudinary.com/dfuru6l6d/image/upload/v1751893915/send_it_to_your_client_bm9xgm.png"
                   alt="Performance Analytics"
